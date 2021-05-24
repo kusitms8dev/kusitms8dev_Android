@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#d5d5d5"
+        >
+        <Button
+            android:id="@+id/notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림"
+            android:layout_marginLeft="300dp"
+            android:onClick="onClick"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:text="OOO님 반갑습니다 ! "
+            android:layout_marginLeft="145dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="큐시즘대학교 스타트업학과 "
+            android:layout_marginLeft="145dp"
+        />
+        <Button
+            android:id="@+id/mypageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_weight="0"
+            android:onClick="onClick"
+            android:layout_marginRight="10dp"
+            android:text="마이페이지>"
+            android:layout_marginLeft="145dp"
+            android:background="#00FF0000"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXXX"/>
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    android:text="우리학교 모집요강">
+
+                </Button>
+                <Button
+                    android:id="@+id/guide_prep"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    android:text="교환학생 준비방법"
+                    android:onClick="onClick">
+
+                </Button>
+                <Button
+                    android:id="@+id/guide_choose_country"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    android:text="국가 선택 가이드"
+                    android:onClick="onClick">
+
+                </Button>
+                <Button
+                    android:id="@+id/guide_lang_test"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    android:text="언어 시험은 이렇게"
+                    android:onClick="onClick">
+
+                </Button>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보게시판"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="교환학생 파견현황 >"
+                android:background="#00FF0000"
+                android:textAlignment="viewStart"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp">
+
+            </Button>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="파견보고서 >"
+                android:background="#00FF0000"
+                android:textAlignment="viewStart"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="커뮤니티"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp">
+            <Button
+                android:id="@+id/uniBoard"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"
+                android:text="연합게시판"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:onClick="onClick">
+
+            </Button>
+            <Button
+                android:id="@+id/innBoard"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"
+                android:text="교내게시판"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/revBoard"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"
+                android:text="후기게시판"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

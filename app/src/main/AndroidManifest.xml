@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.exchange">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity"
+            android:label="SubActivity">
+        </activity>
+
+        <!--연합 게시판 -->
+        <activity android:name=".UniBoardActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".UniBoardInsertActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".UniBoardMakeActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".UniBoardMoreActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".UniBoardPostViewActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".UniBoardRecommActivity"
+            android:label="SubActivity">
+        </activity>
+
+        <!--교내 게시판 -->
+        <activity android:name=".innBoardActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".innBoardInsertActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".innBoardMakeActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".innBoardMoreActivity"
+            android:label="SubActivity">
+        </activity>
+
+        <activity android:name=".innBoardPostViewActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".innBoardRecommActivity"
+            android:label="SubActivity">
+        </activity>
+
+        <!--후기 게시판-->
+        <activity android:name=".RevBoardActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".RevBoardInsertActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".RevBoardPostViewActivity"
+            android:label="SubActivity">
+        </activity>
+
+        <!--알림-->
+        <activity android:name=".NotifiCommActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".NotifiMsgActivity"
+            android:label="SubActivity">
+        </activity>
+
+        <!--가이드-->
+        <activity android:name=".GuidePrepActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".GuideChooseCounActivity"
+            android:label="SubActivity">
+        </activity>
+        <activity android:name=".GuideLangTestActivity"
+            android:label="SubActivity">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
